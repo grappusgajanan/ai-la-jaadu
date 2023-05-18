@@ -1,0 +1,24 @@
+<center>
+  <h2>Flowchart Builder</h2>
+  <p>Enter your prompt & click send button</p>
+  <textarea
+    id="prompt"
+    placeholder="e.g build a flowchart for user login flow"
+    rows="15"
+    cols="40"
+  ></textarea>
+  <br />
+  <button style="margin-top: 16px" id="build">Send</button>
+  <button style="margin-top: 16px" id="test">Test</button>
+  <script>
+    document.getElementById("build").onclick = () => {
+      const prompt = document.getElementById("prompt").value;
+      console.log(prompt);
+      parent.postMessage({ pluginMessage: { type: "build", prompt } }, "*");
+    };
+    document.getElementById("test").onclick = () => {
+      console.log("test click event detected");
+      parent.postMessage({ pluginMessage: { type: "test" } }, "*");
+    };
+  </script>
+</center>

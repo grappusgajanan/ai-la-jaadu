@@ -1,0 +1,14 @@
+{
+  "name": "lets-try-first-plugin",
+  "id": "1237648406498213021",
+  "api": "1.0.0",
+  "main": "code.js",
+  "capabilities": [],
+  "enableProposedApi": false,
+  "editorType": ["figjam"],
+  "networkAccess": {
+    "allowedDomains": ["*"],
+    "reasoning": "Testing in dev"
+  },
+  "ui": "ui.html"
+}
