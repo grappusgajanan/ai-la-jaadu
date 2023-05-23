@@ -1,5 +1,5 @@
 {
-  "name": "lets-try-first-plugin",
+  "name": "figma-plugin",
   "id": "1237648406498213021",
   "api": "1.0.0",
   "main": "code.js",
